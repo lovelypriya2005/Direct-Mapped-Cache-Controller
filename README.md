@@ -57,3 +57,10 @@ The design has been developed using modular RTL architecture, verified through s
 ## Project Architecture
 
 The cache controller is organized into modular RTL components, separating the control path from the data path. The controller FSM manages cache operations, while dedicated modules handle data storage, tag comparison, valid bits, dirty bits, and communication with the main memory.
+<p align="center">
+  <img src="images/architecture.png" alt="Cache Controller Architecture" width="900"/>
+</p>
+
+<p align="center">
+  <b>Figure 1:</b> Architecture of the Direct-Mapped Write-Back Write-Allocate Cache Controller.
+</p>
