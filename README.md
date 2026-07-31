@@ -287,13 +287,13 @@ B.Tech in Electronics and Communication Engineering
 
 Project Focus:
 - Digital Design
--verilog
--cache-controller
--computer-architecture
--hardware-design
--rtl
--cache-memory
--direct-mapped-cache
+- verilog
+- cache-controller
+- computer-architecture
+- hardware-design
+- rtl
+- cache-memory
+- direct-mapped-cache
 
 GitHub: https://github.com/lovelypriya2005
 
