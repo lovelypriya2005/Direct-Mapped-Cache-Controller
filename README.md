@@ -1,14 +1,18 @@
+<div align="center">
+  
 # Direct-Mapped Cache Controller
-A parameterized Verilog implementation of a Direct-Mapped Write-Back Write-Allocate Cache Controller with configurable memory latency.
+
 ![Language](https://img.shields.io/badge/Language-Verilog-blue)
-
 ![Cache](https://img.shields.io/badge/Cache-Direct--Mapped-green)
-
 ![Policy](https://img.shields.io/badge/Write%20Policy-Write--Back-orange)
-
 ![Allocation](https://img.shields.io/badge/Allocation-Write--Allocate-yellow)
-
 ![License](https://img.shields.io/badge/License-MIT-red)
+
+**A parameterized Verilog implementation of a Direct-Mapped Write-Back Write-Allocate Cache Controller with configurable memory latency.**
+
+</div>
+
+---
 
 ## Project Overview
 
