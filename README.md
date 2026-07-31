@@ -278,3 +278,28 @@ Through this project, I gained practical experience in:
 - Cache hit/miss detection and dirty bit management
 - Memory latency handling
 - Functional verification using simulation and waveform analysis
+
+# 👩‍💻 Author
+
+**P. Lovely Priya**
+
+B.Tech in Electronics and Communication Engineering
+
+Project Focus:
+- Digital Design
+-verilog
+-cache-controller
+-computer-architecture
+-hardware-design
+-rtl
+-cache-memory
+-direct-mapped-cache
+
+GitHub: https://github.com/lovelypriya2005
+
+---
+# 📜 License
+
+This project is licensed under the **MIT License**.
+
+See the LICENSE file for details.
