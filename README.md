@@ -64,3 +64,36 @@ The cache controller is organized into modular RTL components, separating the co
 <p align="center">
   <b>Figure 1:</b> Architecture of the Direct-Mapped Write-Back Write-Allocate Cache Controller.
 </p>
+
+## RTL Module Description
+
+| Module | Description |
+|---------|-------------|
+| **cache_top.v** | Top-level module that integrates all cache components and interfaces with the CPU and main memory. |
+| **controller_fsm.v** | Implements the finite state machine (FSM) that controls cache operations, including read/write requests, cache hits, cache misses, and memory transactions. |
+| **data_array.v** | Stores the cache data blocks for each cache line. |
+| **tag_array.v** | Stores the tag corresponding to each cache line for address comparison. |
+| **valid_bit_array.v** | Maintains the valid bit for each cache line to indicate whether stored data is valid. |
+| **dirty_bit_array.v** | Maintains the dirty bit for each cache line to determine whether modified data must be written back to main memory. |
+| **comparator.v** | Compares the requested tag with the stored cache tag to determine cache hits and misses. |
+| **main_memory.v** | Models the main memory with configurable access latency and external memory initialization using `$readmemh`. |
+| **cache_top_tb.v** | Functional testbench used to verify cache behavior under different read and write scenarios. |
+
+## Address Format
+
+The cache controller uses a **32-bit CPU address**, which is divided into three fields to access the cache efficiently.
+
+| Field | Width | Description |
+|-------|------:|-------------|
+| **Tag** | 24 bits | Used to identify the memory block stored in the cache line. |
+| **Index** | 4 bits | Selects one of the 16 cache lines. |
+| **Offset** | 4 bits | Selects the byte within the 128-bit (16-byte) cache block. |
+
+<p align="center">
+  <img src="images/address_format.png" alt="Address Format" width="750"/>
+</p>
+
+<p align="center">
+<b>Figure 2:</b> 32-bit Address Division into Tag, Index, and Offset fields.
+</p>
+
